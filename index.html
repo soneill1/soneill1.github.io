@@ -9,33 +9,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <div class="jumbotron text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p>
+    <h1>Percent Calculator</h1>
+    <p></p>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <form action="/action_page.php">
-          <div class="form-group">
-            <label for="email">First Number:</label>
-            <input type="text" class="form-control" id="txt1" placeholder="Enter number" name="email">
-          </div>
-          <div class="form-group">
-            <label for="pwd">Second Number:</label>
-            <input type="text" class="form-control" id="txt2" placeholder="Enter number" name="pwd">
-          </div>
-          <button onclick="myFunction()">Submit</button>
-        </form>
+        <div class="form-group">
+          <label for="email">First Number:</label>
+          <input type="text" class="form-control" id="txt1" placeholder="Enter number" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Second Number:</label>
+          <input type="text" class="form-control" id="txt2" placeholder="Enter number" name="pwd">
+        </div>
+        <button onclick="myFunction()" class="btn btn-success">Calculate</button>
       </div>
-      <div class="col-sm-6">
-        <p id="demo"></p>
+      <div id="myDiv" class="col-sm-6">
+        <p id="answer"></p>
       </div>
+
     </div>
   </div>
 
